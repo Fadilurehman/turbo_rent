@@ -16,7 +16,7 @@ class CommonTextField extends StatelessWidget {
   final bool isEmail;
   final bool isPhone;
   final bool isUser;
-  final bool isObs;
+  final bool isObs; //OBSCURE PASSWORD
   final Size size;
   final dynamic prefixIcon;
   const CommonTextField({

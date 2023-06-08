@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/components/about_us.dart';
-import 'package:turbo_rent/components/share_app.dart';
+import 'package:turbo_rent/components/drawer/about_us.dart';
+import 'package:turbo_rent/components/drawer/bookings/user_bookings.dart';
+import 'package:turbo_rent/components/drawer/sevices/user_services.dart';
+import 'package:turbo_rent/components/drawer/share_app.dart';
+import 'package:turbo_rent/components/drawer/terms_and_conditon.dart';
+import 'package:turbo_rent/view/authentication/login_screen.dart';
 import '../../utils/colors.dart';
 import '../../utils/textstyle.dart';
-import '../../view/splash_screen.dart';
 import '../../view_model/login_view_model.dart';
-import '../bookings/user_booking.dart';
-import '../terms_and_condition.dart';
-import '../user_services.dart';
 
 class UserDrawer extends StatelessWidget {
   const UserDrawer({
@@ -56,7 +56,7 @@ class UserDrawer extends StatelessWidget {
                   duration: const Duration(
                     milliseconds: 300,
                   ),
-                  child: const UserBooking(),
+                  child: const UserBookings(),
                 ),
               );
             },
@@ -92,7 +92,7 @@ class UserDrawer extends StatelessWidget {
                     milliseconds: 300,
                   ),
                   type: PageTransitionType.leftToRight,
-                  child: const AboutUs(),
+                  child: const AboutUS(),
                 ),
               );
             },
@@ -105,7 +105,7 @@ class UserDrawer extends StatelessWidget {
             title: const Text("Share"),
             onTap: () {
               // AppShare(context);
-              const AppShare();
+              shareAppFile(context);
             },
           ),
           // ListTile(
@@ -170,7 +170,7 @@ class UserDrawer extends StatelessWidget {
                           navigator.pushAndRemoveUntil(
                               PageTransition(
                                 type: PageTransitionType.topToBottom,
-                                child: const SplashScreen(),
+                                child: LoginPage(),
                               ),
                               (route) => false);
                         },

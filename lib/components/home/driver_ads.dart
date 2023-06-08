@@ -68,7 +68,7 @@ class HomeDriverAds extends StatelessWidget {
                     Text(
                       "Do you want to earn with us?",
                       style: textstyle(
-                        17,
+                        15,
                         FontWeight.w600,
                         kBlack,
                       ),

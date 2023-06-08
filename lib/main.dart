@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:turbo_rent/view/splash_screen.dart';
 import 'package:turbo_rent/view_model/login_view_model.dart';
 import 'package:turbo_rent/view_model/signup_view_model.dart';
-
 import 'view_model/all_cars_view_model.dart';
 
 void main() {

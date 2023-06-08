@@ -84,7 +84,7 @@ class AllCarsViewModel extends ChangeNotifier {
     log("getAllCars");
     String url = Urls.baseUrl + Urls.user + Urls.showAllCars;
     final response =
-        await ApiServices.getMEthod(url: url, function: userCarsModelToJson);
+        await ApiServices.getMEthod(url: url, function: userCarsModelFromJson);
     if (response is Success) {
       log("Cars on viewModel");
       if (response.response != null) {

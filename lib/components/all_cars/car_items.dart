@@ -126,8 +126,10 @@ class CarItems extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 PageTransition(
-                                  child:
-                                      const CarDetailsScreen(), //not completed
+                                  child: CarDetailsScreen(
+                                    index: index,
+                                    carData: carData,
+                                  ),
                                   type: PageTransitionType.scale,
                                   duration: const Duration(
                                     milliseconds: 700,
@@ -136,7 +138,7 @@ class CarItems extends StatelessWidget {
                                 ));
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: blueButton,
+                            backgroundColor: kblue,
                             elevation: 0,
                             shape: const RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(

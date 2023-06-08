@@ -40,7 +40,7 @@ class AvailableCars extends StatelessWidget {
                 },
                 child: const Text(
                   "See more.",
-                  style: TextStyle(color: blueButton),
+                  style: TextStyle(color: kblue),
                 ),
               ),
               const SpaceWH(width: 10),
@@ -70,7 +70,7 @@ class AvailableCars extends StatelessWidget {
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 1,
-                            mainAxisExtent: size.width * 0.47,
+                            mainAxisExtent: size.width * 0.57,
                           ),
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,
@@ -118,7 +118,10 @@ class CarCard extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
-                    return const CarDetailsScreen();
+                    return CarDetailsScreen(
+                      index: index,
+                      carData: providerCar.carsDataList,
+                    );
                   },
                 ),
               );
@@ -136,7 +139,7 @@ class CarCard extends StatelessWidget {
               ),
               margin: const EdgeInsets.symmetric(horizontal: 5),
               height: size.width * 0.50,
-              width: size.width * 0.40,
+              width: size.width * 0.50,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
@@ -230,7 +233,10 @@ class CarCard extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return const CarDetailsScreen(); //car details page not completed
+                              return CarDetailsScreen(
+                                index: index,
+                                carData: providerCar.carsDataList,
+                              );
                             },
                           ),
                         );
@@ -238,7 +244,7 @@ class CarCard extends StatelessWidget {
                       child: Container(
                         height: 30,
                         decoration: const BoxDecoration(
-                          color: blueButton,
+                          color: kblue,
                           borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(10),
                             bottomLeft: Radius.circular(10),
@@ -247,7 +253,7 @@ class CarCard extends StatelessWidget {
                         child: Center(
                           child: Text(
                             "BOOK NOW",
-                            style: textstyle(13, FontWeight.w500, kBlack),
+                            style: textstyle(13, FontWeight.w500, kwhite),
                           ),
                         ),
                       ),
