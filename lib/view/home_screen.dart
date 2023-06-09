@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         child: UserDrawer(),
       ),
       appBar: AppBar(
-        backgroundColor: kblue,
+        backgroundColor: maincolor,
         elevation: 0,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

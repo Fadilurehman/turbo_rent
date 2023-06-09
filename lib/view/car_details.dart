@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:turbo_rent/components/car_details/about_car.dart';
-import 'package:turbo_rent/components/car_details/car_header.dart';
+import 'package:turbo_rent/components/car_details/car_header_section.dart';
 import 'package:turbo_rent/components/car_details/car_specifications.dart';
 import 'package:turbo_rent/model/user_all_cars_model.dart';
 import 'package:turbo_rent/utils/space_wh.dart';
+import 'package:turbo_rent/view/booking_information.dart';
 
 class CarDetailsScreen extends StatelessWidget {
   const CarDetailsScreen(
@@ -17,7 +18,7 @@ class CarDetailsScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 0, 122, 146),
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -51,7 +52,13 @@ class CarDetailsScreen extends StatelessWidget {
 
             AboutCar(
                 details: carData[index].description.toString(),
-                place: carData[index].place.toString())
+                place: carData[index].place.toString()),
+
+            // Booking Section
+            BookingInformations(
+              index: index,
+              size: size,
+            ),
           ],
         ),
       ),

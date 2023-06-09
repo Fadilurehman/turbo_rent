@@ -107,7 +107,7 @@ class HomeDriverAds extends StatelessWidget {
                               )
                             ],
                             borderRadius: BorderRadius.circular(20),
-                            color: kblue),
+                            color: maincolor),
                         child: Center(
                           child: Text(
                             " BECOME A DRIVER ",

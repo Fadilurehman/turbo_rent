@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const maincolor = Color.fromARGB(255, 0, 122, 146);
 const whiteBG = Color.fromARGB(255, 242, 243, 247);
 const blackBG = Color(0xFF181A20);
 const kBlack = Colors.black;
@@ -27,7 +28,7 @@ const specialCard = LinearGradient(
 const specialCard2 = LinearGradient(
   colors: [
     Color.fromARGB(255, 0, 4, 40),
-    Color.fromARGB(255, 0, 78, 146),
+    Color.fromARGB(255, 0, 122, 146),
   ],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,

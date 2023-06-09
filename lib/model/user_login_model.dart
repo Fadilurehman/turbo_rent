@@ -6,33 +6,32 @@ UserLoginModel userLoginModelFromJson(String str) =>
 String userLoginModelToJson(UserLoginModel data) => json.encode(data.toJson());
 
 class UserLoginModel {
-  String? id;
-  String? fullName;
   String? email;
+  String? password;
+  String? sId;
+  String? fullName;
   String? phoneNumber;
   String? token;
 
   UserLoginModel({
-    this.id,
-    this.fullName,
     this.email,
+    this.password,
+    this.sId,
+    this.fullName,
     this.phoneNumber,
     this.token,
   });
 
   factory UserLoginModel.fromJson(Map<String, dynamic> json) => UserLoginModel(
-        id: json["_id"],
-        fullName: json["fullName"],
-        email: json["email"],
-        phoneNumber: json["phoneNumber"],
-        token: json["token"],
+        fullName: json['fullName'],
+        email: json['email'],
+        sId: json['_id'],
+        phoneNumber: json['phoneNumber'],
+        token: json['token'],
       );
 
   Map<String, dynamic> toJson() => {
-        "_id": id,
-        "fullName": fullName,
-        "email": email,
-        "phoneNumber": phoneNumber,
-        "token": token,
+        'email': email,
+        'password': password,
       };
 }

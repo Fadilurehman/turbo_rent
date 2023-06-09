@@ -244,7 +244,7 @@ class CarCard extends StatelessWidget {
                       child: Container(
                         height: 30,
                         decoration: const BoxDecoration(
-                          color: kblue,
+                          color: maincolor,
                           borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(10),
                             bottomLeft: Radius.circular(10),

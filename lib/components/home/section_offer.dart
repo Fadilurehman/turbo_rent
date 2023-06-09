@@ -33,7 +33,7 @@ class SectionOffer extends StatelessWidget {
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(100),
             ),
-            color: kblue,
+            color: maincolor,
           ),
           height: size.height * 0.28,
         ),

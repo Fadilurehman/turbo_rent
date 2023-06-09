@@ -1,36 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:turbo_rent/utils/colors.dart';
 import 'package:turbo_rent/utils/space_wh.dart';
-
-import '../../utils/textstyle.dart';
+import 'package:turbo_rent/utils/textstyle.dart';
 
 class CarHeaderSection extends StatelessWidget {
   final String carName;
   final String image;
   final String model;
   final Size size;
-  const CarHeaderSection(
-      {super.key,
-      required this.carName,
-      required this.image,
-      required this.model,
-      required this.size});
+  const CarHeaderSection({
+    super.key,
+    required this.carName,
+    required this.image,
+    required this.model,
+    required this.size,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: size.width * 07,
+      height: size.width * 0.7,
       decoration: const BoxDecoration(
-        color: Colors.blue,
+        color: Color.fromARGB(255, 0, 122, 146),
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(50),
           bottomRight: Radius.circular(50),
+          bottomLeft: Radius.circular(50),
         ),
       ),
       child: Stack(
         children: [
-          //Image
+// Image
           Positioned(
             left: 50,
             bottom: 20,
@@ -39,7 +39,7 @@ class CarHeaderSection extends StatelessWidget {
               width: 300,
             ),
           ),
-          //details- car name, rating , Logo
+// Other details[car name, rating, Logo]
           Positioned(
             top: 0,
             right: 0,

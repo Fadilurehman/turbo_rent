@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:turbo_rent/view/splash_screen.dart';
+import 'package:turbo_rent/view_model/booking_view_model.dart';
 import 'package:turbo_rent/view_model/login_view_model.dart';
+import 'package:turbo_rent/view_model/my_bookings_view_model.dart';
+import 'package:turbo_rent/view_model/places_view_model.dart';
 import 'package:turbo_rent/view_model/signup_view_model.dart';
 import 'view_model/all_cars_view_model.dart';
 
@@ -25,6 +28,15 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => AllCarsViewModel(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => PlacesViewModel(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => BookingViewModel(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => MyBookingsViewModel(),
         ),
       ],
       child: MaterialApp(

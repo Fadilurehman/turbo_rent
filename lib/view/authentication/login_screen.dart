@@ -77,7 +77,7 @@ class LoginPage extends StatelessWidget {
                                   vertical: size.width * 0.03),
                               child: CommonTextField(
                                 prefixIcon: const Icon(Icons.key),
-                                controller: provider.passwordCntrlr,
+                                controller: provider.passwordController,
                                 hintText: "Password",
                                 keyType: TextInputType.name,
                                 size: size,

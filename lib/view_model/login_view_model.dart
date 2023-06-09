@@ -1,5 +1,4 @@
-import 'dart:developer';
-
+// import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turbo_rent/components/common/commonsnackbar.dart';
@@ -10,18 +9,18 @@ import 'package:turbo_rent/utils/colors.dart';
 import 'package:turbo_rent/utils/urls.dart';
 import 'package:turbo_rent/view/home_screen.dart';
 
-class LoginViewModel extends ChangeNotifier {
+class LoginViewModel with ChangeNotifier {
+  LoginViewModel() {
+    getUserDetails();
+  }
   TextEditingController emailController = TextEditingController();
-  TextEditingController passwordCntrlr = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   String? _userName;
   String? get userName => _userName;
 
   String? _userEmail;
   String? get userEmail => _userEmail;
-
-  Error? _loginError;
-  Error? get loginError => _loginError;
 
   bool _passwordVisibility = true;
   bool get passwordVisibility => _passwordVisibility;
@@ -30,15 +29,19 @@ class LoginViewModel extends ChangeNotifier {
   bool get isLoading => _isLoading;
 
   UserLoginModel? _userData;
-  UserLoginModel? get userData => _userData;
+  UserLoginModel get userData => _userData!;
 
-  Future<UserLoginModel?> setUserData(UserLoginModel userData) async {
-    _userData = userData;
-    return _userData;
+  LoginError? _loginError;
+  LoginError get loginError => _loginError!;
+
+// Function for password visibility
+  showPassword() {
+    _passwordVisibility = !passwordVisibility;
+    notifyListeners();
   }
 
-  getUserName(String? userName) {
-    _userName = userName;
+  getUserName(String? usrName) {
+    _userName = usrName;
     notifyListeners();
   }
 
@@ -47,58 +50,70 @@ class LoginViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  setLoading(bool loading) {
+  // Function to know it is loading
+  setLoading(bool loading) async {
     _isLoading = loading;
     notifyListeners();
   }
 
-  showPassword() {
-    _passwordVisibility = !passwordVisibility;
-    notifyListeners();
+  Future<UserLoginModel?> setUserData(UserLoginModel userData) async {
+    _userData = userData;
+    return _userData;
   }
 
-  getLoginStatus(context) async {
-    setLoading(true);
+  //
+  setLoginError(LoginError loginError, context) async {
+    _loginError = loginError;
+    return errorResponses(_loginError!, context);
+  }
 
+  // Main function in user Login
+  getLoginStatus(BuildContext context) async {
+    final navigator = Navigator.of(context);
+    setLoading(true);
     String url = Urls.baseUrl + Urls.user + Urls.userLogin;
-    Map<dynamic, dynamic> body = {
-      "email": emailController.text.trim(),
-      "password": passwordCntrlr.text.trim()
-    };
     final response = await ApiServices.postMethod(
-        url: url,
-        data: body,
-        context: context,
-        function: userLoginModelFromJson);
+      url: url,
+      data: userDataBody(),
+      context: context,
+      function: userLoginModelFromJson,
+    );
+
     if (response is Success) {
-      log("11111111");
       final data = await setUserData(response.response as UserLoginModel);
       final accessToken = data!.token;
-      final userId = data.id;
+      final userId = data.sId;
       final userName = data.fullName;
       final userEmail = data.email;
+
       setLoginStatus(
           accessToken: accessToken!,
           userId: userId!,
           userName: userName!,
           userEmail: userEmail!);
       clearController();
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
-        ),
-        (route) => false,
-      );
+      navigator.pushAndRemoveUntil(MaterialPageRoute(
+        builder: (context) {
+          return const HomeScreen();
+        },
+      ), (route) => false);
     }
+
     if (response is Failures) {
-      setLoading(false);
-      Error loginError =
-          Error(code: response.code, message: response.responseMsg);
-      setLoginError(loginError, context);
-      log("failed");
+      await setLoading(false);
+      LoginError loginError = LoginError(
+        code: response.code,
+        message: response.errrorResponse,
+      );
+      // ignore: use_build_context_synchronously
+      await setLoginError(loginError, context);
     }
     setLoading(false);
+  }
+
+  clearController() {
+    passwordController.clear();
+    emailController.clear();
   }
 
   // save the value of access token and make sure the user already login or not
@@ -117,28 +132,27 @@ class LoginViewModel extends ChangeNotifier {
     await status.setString("USER_EMAIL", userEmail);
   }
 
+//GET THE UserName and email
   getUserDetails() async {
-    final pref = await SharedPreferences.getInstance();
-    final name = pref.getString("USER_NAME");
-    final email = pref.getString("USER_EMAIL");
+    final prefs = await SharedPreferences.getInstance();
+    final name = prefs.getString("USER_NAME");
+    final email = prefs.getString("USER_EMAIL");
     getUserName(name);
     getUserEmail(email);
   }
 
-  void clearController() {
-    emailController.clear();
-    passwordCntrlr.clear();
+  // The body to pass in the method
+  Map<String, dynamic> userDataBody() {
+    final body = UserLoginModel(
+      email: emailController.text.trim(),
+      password: passwordController.text.trim(),
+    );
+    return body.toJson();
   }
 
-  setLoginError(Error? error, context) async {
-    _loginError = error;
-    return errorResponses(loginError!, context);
-  }
-
-  errorResponses(Error loginError, BuildContext context) {
+  errorResponses(LoginError loginError, BuildContext context) {
     final statusCode = loginError.code;
     if (statusCode == 401 || statusCode == 500) {
-      log("snackbar: Invalid username or passeord");
       return CommonSnackBAr.snackBar(
           context: context,
           data: "Invalid Username or password",
@@ -149,8 +163,12 @@ class LoginViewModel extends ChangeNotifier {
   }
 }
 
-class Error {
+class LoginError {
   int? code;
   Object? message;
-  Error({this.code, this.message});
+
+  LoginError({
+    this.code,
+    this.message,
+  });
 }

@@ -1,5 +1,6 @@
 class Urls {
   static String baseUrl = "https://fastrack-backend.onrender.com/api";
+  static String bearer = "Bearer ";
 
   static String user = "/users";
   static String driver = "/driver";
