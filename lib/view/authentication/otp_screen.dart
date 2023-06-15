@@ -16,7 +16,6 @@ class UserOtpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<UserSignupViewModel>();
-
     final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: whiteBG,

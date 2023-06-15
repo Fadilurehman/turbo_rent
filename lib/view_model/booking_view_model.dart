@@ -13,7 +13,7 @@ import 'package:turbo_rent/res/api_status.dart';
 import 'package:turbo_rent/utils/colors.dart';
 import 'package:turbo_rent/utils/textstyle.dart';
 import 'package:turbo_rent/utils/urls.dart';
-import 'package:turbo_rent/view/car_payment.dart';
+import 'package:turbo_rent/view/payment/car_payment.dart';
 import 'package:turbo_rent/view_model/all_cars_view_model.dart';
 import 'package:turbo_rent/view_model/places_view_model.dart';
 

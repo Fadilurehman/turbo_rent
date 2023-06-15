@@ -34,16 +34,6 @@ class FooterBoookingInfo extends StatelessWidget {
               Provider.of<BookingViewModel>(context, listen: false)
                   .bookCar(context: context, index: index);
             }
-            // if (provider.totalamount > 0 && provider.totalHors > 0) {
-            //   Provider.of<BookingViewModel>(context, listen: false)
-            //       .bookCar(context: context, index: index);
-            // } else {
-            //   CommonSnackBAr.snackBar(
-            //     context: context,
-            //     data: "complete the form with proper details",
-            //     color: snackbarwarn,
-            //   );
-            // }
           },
           child: Container(
             margin: const EdgeInsets.fromLTRB(20, 12, 10, 12),

@@ -85,7 +85,7 @@ class SectionOffer extends StatelessWidget {
                       child: SizedBox(
                         child: Image.asset(
                           images[index],
-                          width: size.width * 0.8,
+                          width: size.width * 0.7,
                         ),
                       ),
                     ),

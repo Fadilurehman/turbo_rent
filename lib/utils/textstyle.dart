@@ -75,7 +75,11 @@ final titleCardName = GoogleFonts.montserrat(
   fontWeight: FontWeight.w500,
 );
 
-textstyle(double size, FontWeight fweight, Color clr) {
+textstyle(
+  double size,
+  FontWeight fweight,
+  Color clr,
+) {
   return GoogleFonts.montserrat(
     letterSpacing: 0.5,
     fontSize: size,
