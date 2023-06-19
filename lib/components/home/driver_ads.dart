@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turbo_rent/view/driver_signup.dart';
 
 import '../../utils/colors.dart';
 import '../../utils/space_wh.dart';
@@ -85,12 +86,12 @@ class HomeDriverAds extends StatelessWidget {
                     const SpaceWH(height: 15),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const DriverSignup(), not finished
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const DriverSignup(),
+                          ),
+                        );
                       },
                       child: Container(
                         height: 45,
