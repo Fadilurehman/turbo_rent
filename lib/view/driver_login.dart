@@ -78,7 +78,7 @@ class DriverLogin extends StatelessWidget {
                         child: const Text("LOADING..."),
                       )
                     : CommonButton(
-                        color: blueButton,
+                        color: maincolor,
                         child: const Text(
                           "Login",
                         ),
