@@ -117,7 +117,7 @@ class BookingCard extends StatelessWidget {
                               children: [
                                 const SpaceWH(width: 30),
                                 Text(
-                                  "      TO :  ",
+                                  "TO       :  ",
                                   style: textstyle(14, FontWeight.w400, kBlack),
                                 ),
                                 Text(

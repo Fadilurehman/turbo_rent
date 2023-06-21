@@ -10,6 +10,7 @@ import 'package:turbo_rent/view_model/signup_view_model.dart';
 import 'view_model/all_cars_view_model.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 

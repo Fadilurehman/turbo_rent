@@ -10,7 +10,7 @@ import 'package:turbo_rent/res/api_services.dart';
 import 'package:turbo_rent/res/api_status.dart';
 import 'package:turbo_rent/utils/colors.dart';
 import 'package:turbo_rent/utils/urls.dart';
-import 'package:turbo_rent/view/driver_signup.dart';
+import 'package:turbo_rent/view/driver_screen.dart';
 import 'package:turbo_rent/view/home_screen.dart';
 import 'package:turbo_rent/view_model/login_view_model.dart';
 
@@ -239,7 +239,7 @@ class DriverViewModel with ChangeNotifier {
       clearController();
       navigator.pushAndRemoveUntil(MaterialPageRoute(
         builder: (context) {
-          return const DriverSignup();
+          return const DriverScreen();
         },
       ), (route) => false);
     }

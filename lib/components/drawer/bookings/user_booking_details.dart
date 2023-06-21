@@ -25,9 +25,9 @@ class UserBookingDetails extends StatelessWidget {
     String dropOffMonth = DateFormat.MMM().format(dropOff);
     String dropOFfTime = DateFormat('h:mm a').format(dropOff);
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 0, 49, 92),
+      backgroundColor: maincolor,
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 0, 49, 92),
+        backgroundColor: maincolor,
         elevation: 0,
         title: Text(
           "Booking Details",
@@ -201,6 +201,7 @@ class UserBookingDetails extends StatelessWidget {
                           style: hintStyle,
                         ),
                         const SpaceWH(width: 20),
+                        const Text("₹"),
                         Text(
                           provider.bookingList[index].totalAmount ?? "00",
                           style: textstyle(15, FontWeight.w600, kBlack),
