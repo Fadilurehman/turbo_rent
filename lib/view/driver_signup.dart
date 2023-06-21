@@ -118,7 +118,7 @@ class DriverSignup extends StatelessWidget {
                               width: 4,
                               color: kwhite,
                             ),
-                            color: blueButton,
+                            color: maincolor,
                           ),
                           child: GestureDetector(
                             onTap: () async {
@@ -145,7 +145,10 @@ class DriverSignup extends StatelessWidget {
                                 .read<DriverViewModel>()
                                 .picklicense1();
                           },
-                          child: const Text("DRIVING LICENSE   [FRONT SIDE]"),
+                          child: const Text(
+                            "DRIVING LICENSE   [FRONT SIDE]",
+                            style: TextStyle(color: maincolor),
+                          ),
                         )
                       : Image.file(
                           provider.licenseFrontView!,
@@ -166,7 +169,8 @@ class DriverSignup extends StatelessWidget {
                                 .read<DriverViewModel>()
                                 .picklicense2();
                           },
-                          child: const Text("DRIVING LICENSE   [BACK SIDE]"),
+                          child: const Text("DRIVING LICENSE   [BACK SIDE]",
+                              style: TextStyle(color: maincolor)),
                         )
                       : Image.file(
                           provider.licenseRearView!,

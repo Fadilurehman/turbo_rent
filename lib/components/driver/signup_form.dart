@@ -68,7 +68,7 @@ class DriverSignUPForm extends StatelessWidget {
                   child: const Text("LOADING..."),
                 )
               : CommonButton(
-                  color: blueButton,
+                  color: maincolor,
                   onTap: () async {
                     if (driverFormK.currentState!.validate()) {
                       if (provider.driverImage == null) {
