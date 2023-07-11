@@ -6,6 +6,7 @@ import 'package:turbo_rent/utils/colors.dart';
 import 'package:turbo_rent/utils/image.dart';
 import 'package:turbo_rent/utils/space_wh.dart';
 import 'package:turbo_rent/utils/textstyle.dart';
+import 'package:turbo_rent/view/home_screen.dart';
 import 'package:turbo_rent/view_model/login_view_model.dart';
 import 'signup_screen.dart';
 
@@ -95,9 +96,11 @@ class LoginPage extends StatelessWidget {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: size.width * 0.1,
-                                  vertical: size.width * 0.09),
+                              padding: EdgeInsets.only(
+                                  top: size.width * 0.1,
+                                  right: size.width * 0.09,
+                                  left: size.width * 0.09,
+                                  bottom: 7),
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   backgroundColor:
@@ -120,6 +123,25 @@ class LoginPage extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            // ElevatedButton(
+                            //     onPressed: () {
+                            //       Navigator.push(
+                            //           context,
+                            //           MaterialPageRoute(
+                            //               builder: (context) =>
+                            //                   const HomeScreen()));
+                            //     },
+                            //     child: const Text(
+                            //       "Guest",
+                            //       style: TextStyle(color: Colors.white),
+                            //     )),
+                            InkWell(
+                                onTap: () => Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const HomeScreen())),
+                                child: const Text("Guest")),
                             SizedBox(
                               height: size.width * 0.5,
                               width: size.width * 0.5,

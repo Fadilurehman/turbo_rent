@@ -364,7 +364,7 @@ class BookingViewModel extends ChangeNotifier {
     }
     return CommonSnackBAr.snackBar(
       context: context,
-      data: "No internet connection",
+      data: "No internet connection or create an Account",
       color: snackbarRed,
     );
   }
