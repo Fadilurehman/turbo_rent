@@ -4,15 +4,15 @@ import 'package:cloudinary/cloudinary.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/components/common/commonsnackbar.dart';
-import 'package:turbo_rent/model/driver_login_model.dart';
-import 'package:turbo_rent/res/api_services.dart';
-import 'package:turbo_rent/res/api_status.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/urls.dart';
-import 'package:turbo_rent/view/driver_screen.dart';
-import 'package:turbo_rent/view/home_screen.dart';
-import 'package:turbo_rent/view_model/login_view_model.dart';
+import 'package:turbos_rent/components/common/commonsnackbar.dart';
+import 'package:turbos_rent/model/driver_login_model.dart';
+import 'package:turbos_rent/res/api_services.dart';
+import 'package:turbos_rent/res/api_status.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/urls.dart';
+import 'package:turbos_rent/view/driver_screen.dart';
+import 'package:turbos_rent/view/home_screen.dart';
+import 'package:turbos_rent/view_model/login_view_model.dart';
 
 class DriverViewModel with ChangeNotifier {
   TextEditingController nameController = TextEditingController();

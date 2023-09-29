@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:turbo_rent/res/api_status.dart';
+import 'package:turbos_rent/res/api_status.dart';
 
 class ApiServices {
   // POST METHOD

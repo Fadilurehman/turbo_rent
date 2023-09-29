@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/colors.dart';
 
 class LicenseImagePick extends StatelessWidget {
   const LicenseImagePick({

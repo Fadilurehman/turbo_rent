@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/drawer/bookings/user_booking_details.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view_model/my_bookings_view_model.dart';
+import 'package:turbos_rent/components/drawer/bookings/user_booking_details.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view_model/my_bookings_view_model.dart';
 
 class BookingCard extends StatelessWidget {
   final int index;

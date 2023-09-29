@@ -1,13 +1,13 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/model/user_otp_model.dart';
-import 'package:turbo_rent/model/user_signup_model.dart';
-import 'package:turbo_rent/res/api_services.dart';
-import 'package:turbo_rent/res/api_status.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/urls.dart';
-import 'package:turbo_rent/view/home_screen.dart';
+import 'package:turbos_rent/model/user_otp_model.dart';
+import 'package:turbos_rent/model/user_signup_model.dart';
+import 'package:turbos_rent/res/api_services.dart';
+import 'package:turbos_rent/res/api_status.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/urls.dart';
+import 'package:turbos_rent/view/home_screen.dart';
 import '../components/common/commonsnackbar.dart';
 import '../view/authentication/otp_screen.dart';
 

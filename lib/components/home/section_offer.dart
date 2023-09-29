@@ -1,8 +1,8 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/view/car_list.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/view/car_list.dart';
 
 class SectionOffer extends StatelessWidget {
   final List images = [

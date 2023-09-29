@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/components/common/common_button.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view/home_screen.dart';
-import 'package:turbo_rent/view_model/driver_view_model.dart';
+import 'package:turbos_rent/components/common/common_button.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view/home_screen.dart';
+import 'package:turbos_rent/view_model/driver_view_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DriverScreen extends StatelessWidget {

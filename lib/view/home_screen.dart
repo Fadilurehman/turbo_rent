@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/home/available_cars.dart';
-import 'package:turbo_rent/components/home/section_offer.dart';
-import 'package:turbo_rent/components/home/user_drawer.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view_model/login_view_model.dart';
-import 'package:turbo_rent/utils/colors.dart';
+import 'package:turbos_rent/components/home/available_cars.dart';
+import 'package:turbos_rent/components/home/section_offer.dart';
+import 'package:turbos_rent/components/home/user_drawer.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view_model/login_view_model.dart';
+import 'package:turbos_rent/utils/colors.dart';
 import '../components/home/driver_ads.dart';
 
 class HomeScreen extends StatelessWidget {

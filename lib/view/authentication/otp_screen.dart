@@ -3,11 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:pinput/pinput.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/image.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view_model/signup_view_model.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/image.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view_model/signup_view_model.dart';
 
 FocusNode focusNode = FocusNode();
 

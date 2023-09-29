@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/view_model/all_cars_view_model.dart';
+import 'package:turbos_rent/view_model/all_cars_view_model.dart';
 import '../components/all_cars/all_cars.dart';
 import '../components/all_cars/car_brand_selection.dart';
 import '../components/common/loading_card.dart';

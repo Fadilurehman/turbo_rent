@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/components/common/common_appbar.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view/payment/payment_varified.dart';
+import 'package:turbos_rent/components/common/common_appbar.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view/payment/payment_varified.dart';
 import '../../view_model/booking_view_model.dart';
 
 const sharedKeyValue = 'Payment Successfull';

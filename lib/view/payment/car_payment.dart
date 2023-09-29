@@ -3,12 +3,12 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/common/common_button.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view/payment/payment_process.dart';
-import 'package:turbo_rent/view_model/booking_view_model.dart';
+import 'package:turbos_rent/components/common/common_button.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view/payment/payment_process.dart';
+import 'package:turbos_rent/view_model/booking_view_model.dart';
 
 class CarPaymentScreen extends StatefulWidget {
   const CarPaymentScreen({

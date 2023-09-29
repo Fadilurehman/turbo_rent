@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view/home_screen.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view/home_screen.dart';
 
 class PaymentVarified extends StatelessWidget {
   const PaymentVarified({super.key});

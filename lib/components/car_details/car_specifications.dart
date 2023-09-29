@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/model/user_all_cars_model.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
+import 'package:turbos_rent/model/user_all_cars_model.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
 
 class CarSpecifications extends StatelessWidget {
   const CarSpecifications(

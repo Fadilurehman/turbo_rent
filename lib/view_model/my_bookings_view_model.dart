@@ -1,12 +1,10 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/model/my_bookings_model.dart';
-import 'package:turbo_rent/res/api_services.dart';
-import 'package:turbo_rent/res/api_status.dart';
-import 'package:turbo_rent/utils/urls.dart';
+import 'package:turbos_rent/model/my_bookings_model.dart';
+import 'package:turbos_rent/res/api_services.dart';
+import 'package:turbos_rent/res/api_status.dart';
+import 'package:turbos_rent/utils/urls.dart';
 
 class MyBookingsViewModel extends ChangeNotifier {
   MyBookingsViewModel() {

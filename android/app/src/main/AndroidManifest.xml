@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.turbo_rent">
    <application
-        android:label="Turbo_rent"
+        android:label="Turbos_rent"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

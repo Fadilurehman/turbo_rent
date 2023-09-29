@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/components/car_details/about_car.dart';
-import 'package:turbo_rent/components/car_details/car_header_section.dart';
-import 'package:turbo_rent/components/car_details/car_specifications.dart';
-import 'package:turbo_rent/model/user_all_cars_model.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/view/booking_information.dart';
+import 'package:turbos_rent/components/car_details/about_car.dart';
+import 'package:turbos_rent/components/car_details/car_header_section.dart';
+import 'package:turbos_rent/components/car_details/car_specifications.dart';
+import 'package:turbos_rent/model/user_all_cars_model.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/view/booking_information.dart';
 
 class CarDetailsScreen extends StatelessWidget {
   const CarDetailsScreen(

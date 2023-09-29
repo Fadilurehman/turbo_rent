@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/view/driver_signup.dart';
+import 'package:turbos_rent/view/driver_signup.dart';
 
 import '../../utils/colors.dart';
 import '../../utils/space_wh.dart';
@@ -121,20 +121,6 @@ class HomeDriverAds extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // CommonButton(
-                    //   onTap: () {
-                    //     p.pay(amount: "100", context: context);
-                    //   },
-                    //   color: blueButton,
-                    //   child: const Text("Test 1"),
-                    // ),
-                    // CommonButton(
-                    //   onTap: () {
-                    //     s.payAmount(context, "1000");
-                    //   },
-                    //   color: blueButton,
-                    //   child: const Text("Test 2"),
-                    // ),
                     Container(
                       height: 80,
                       width: 180,

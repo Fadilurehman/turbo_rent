@@ -1,8 +1,8 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/res/api_services.dart';
-import 'package:turbo_rent/res/api_status.dart';
-import 'package:turbo_rent/utils/urls.dart';
+import 'package:turbos_rent/res/api_services.dart';
+import 'package:turbos_rent/res/api_status.dart';
+import 'package:turbos_rent/utils/urls.dart';
 import '../model/user_all_cars_model.dart';
 
 class AllCarsViewModel extends ChangeNotifier {

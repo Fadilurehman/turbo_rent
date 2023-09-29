@@ -1,11 +1,11 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/view/authentication/login_screen.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/image.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/text_style.dart';
+import 'package:turbos_rent/view/authentication/login_screen.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/image.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/text_style.dart';
 import 'home_screen.dart';
 
 class SplashScreen extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/common/loading_card.dart';
-import 'package:turbo_rent/components/drawer/bookings/bookings_card.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view_model/my_bookings_view_model.dart';
+import 'package:turbos_rent/components/common/loading_card.dart';
+import 'package:turbos_rent/components/drawer/bookings/bookings_card.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view_model/my_bookings_view_model.dart';
 
 class UserBookings extends StatelessWidget {
   const UserBookings({super.key});

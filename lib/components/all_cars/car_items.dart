@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
 import '../../model/user_all_cars_model.dart';
 import '../../utils/colors.dart';
 import '../../view/car_details.dart';

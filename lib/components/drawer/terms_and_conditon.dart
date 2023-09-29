@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/components/common/common_appbar.dart';
-import 'package:turbo_rent/utils/colors.dart';
+import 'package:turbos_rent/components/common/common_appbar.dart';
+import 'package:turbos_rent/utils/colors.dart';
 
 class TermsAndCondition extends StatelessWidget {
   const TermsAndCondition({super.key});

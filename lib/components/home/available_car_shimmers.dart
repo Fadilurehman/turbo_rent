@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/components/common/common_shimmer.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
+import 'package:turbos_rent/components/common/common_shimmer.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
 
 class AvailableCarsShimmer extends StatelessWidget {
   const AvailableCarsShimmer({super.key});

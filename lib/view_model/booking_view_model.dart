@@ -1,21 +1,19 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbo_rent/components/common/commonsnackbar.dart';
-import 'package:turbo_rent/model/booking_details_model.dart';
-import 'package:turbo_rent/model/car_booking_model.dart';
-import 'package:turbo_rent/res/api_services.dart';
-import 'package:turbo_rent/res/api_status.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/utils/urls.dart';
-import 'package:turbo_rent/view/payment/car_payment.dart';
-import 'package:turbo_rent/view_model/all_cars_view_model.dart';
-import 'package:turbo_rent/view_model/places_view_model.dart';
+import 'package:turbos_rent/components/common/commonsnackbar.dart';
+import 'package:turbos_rent/model/booking_details_model.dart';
+import 'package:turbos_rent/model/car_booking_model.dart';
+import 'package:turbos_rent/res/api_services.dart';
+import 'package:turbos_rent/res/api_status.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/utils/urls.dart';
+import 'package:turbos_rent/view/payment/car_payment.dart';
+import 'package:turbos_rent/view_model/all_cars_view_model.dart';
+import 'package:turbos_rent/view_model/places_view_model.dart';
 
 class BookingViewModel extends ChangeNotifier {
   BookingDetails? _bookingDetail;

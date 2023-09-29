@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:turbo_rent/components/common/common_appbar.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
+import 'package:turbos_rent/components/common/common_appbar.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../utils/space_wh.dart';
 

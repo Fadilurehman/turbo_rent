@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/home/available_car_shimmers.dart';
-import 'package:turbo_rent/view/car_details.dart';
+import 'package:turbos_rent/components/home/available_car_shimmers.dart';
+import 'package:turbos_rent/view/car_details.dart';
 import '../../utils/colors.dart';
 import '../../utils/space_wh.dart';
 import '../../utils/textstyle.dart';

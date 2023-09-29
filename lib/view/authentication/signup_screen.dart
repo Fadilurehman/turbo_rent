@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:turbo_rent/components/common/c_textfield.dart';
-import 'package:turbo_rent/utils/colors.dart';
-import 'package:turbo_rent/utils/image.dart';
-import 'package:turbo_rent/utils/space_wh.dart';
-import 'package:turbo_rent/utils/textstyle.dart';
-import 'package:turbo_rent/view/authentication/login_screen.dart';
+import 'package:turbos_rent/components/common/c_textfield.dart';
+import 'package:turbos_rent/utils/colors.dart';
+import 'package:turbos_rent/utils/image.dart';
+import 'package:turbos_rent/utils/space_wh.dart';
+import 'package:turbos_rent/utils/textstyle.dart';
+import 'package:turbos_rent/view/authentication/login_screen.dart';
 import '../../view_model/signup_view_model.dart';
 
 class SignUpScreen extends StatelessWidget {
